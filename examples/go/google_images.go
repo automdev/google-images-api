@@ -42,7 +42,7 @@ func main() {
 	_ = url.Values{}
 	_ = json.Valid
 	params := url.Values{}
-	params.Set("query", "YOUR_VALUE")
+	params.Set("query", "lion")
 	target := "https://api.autom.dev/v1/google/images"
 	if len(params) > 0 {
 		target += "?" + params.Encode()

@@ -71,7 +71,7 @@ response = requests.get(
     "https://api.autom.dev/v1/google/images",
     headers=HEADERS,
     params={
-        "query": "YOUR_VALUE",
+        "query": "lion",
     },
     timeout=120,
 )
@@ -107,7 +107,7 @@ type GoogleImagesApi = {
 const headers = { "x-api-key": process.env.AUTOM_API_KEY!, "Content-Type": "application/json" };
 
 const params = new URLSearchParams({
-  "query": "YOUR_VALUE",
+  "query": "lion",
 });
 
 const response = await fetch(`https://api.autom.dev/v1/google/images?${params}`, { headers });
