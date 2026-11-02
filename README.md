@@ -55,7 +55,6 @@ Search Google Images via API and retrieve image results (URLs, titles, sources, 
 | `hl` | query | string | — | Language to use for the search (two-letter language code, e.g. `en`, `fr`). |
 | `google_domains` | query | string | — | Google domain to use (e.g. `google.com`, `google.fr`). |
 | `async` | query | boolean | — | If true, returns a job and lets you fetch results asynchronously. |
-| `safe` | query | string | — | Adult content filter. `active` enables Google SafeSearch; `off` disables it. Omit to use Google default. |
 
 ### Python example
 
