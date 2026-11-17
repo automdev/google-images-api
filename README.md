@@ -52,10 +52,13 @@ Search Google Images via API and retrieve image results (URLs, titles, sources, 
 |---|---|---|---|---|
 | `query` | query | string | ✅ | Query you want to search on Google Images (e.g. "lion", "nike logo", "modern house exterior"). |
 | `page` | query | number | — | Page number for pagination (1 = first page). |
-| `gl` | query | string | — | Country to use for the search (two-letter country code, e.g. `us`, `fr`). |
-| `hl` | query | string | — | Language to use for the search (two-letter language code, e.g. `en`, `fr`). |
-| `google_domains` | query | string | — | Google domain to use (e.g. `google.com`, `google.fr`). |
+| `google_domain` | query | string | — | Google domain to use for the search. Defaults to `google.com`. |
+| `gl` | query | string | — | Country to use for the Google search. Two-letter country code (e.g. `us` for the United States, `uk` for United Kingdom, or `fr` for France). |
+| `hl` | query | string | — | Language to use for the Google search. Two or three-letter language code (e.g. `en`, `es`, `fr`), optionally followed by a region code (e.g. `en-gb`, `es-419`). |
+| `cr` | query | string | — | Limit results to one or more countries. Use `country{XX}` with `\|` as delimiter (e.g. `countryFR\|countryDE`). |
+| `lr` | query | string | — | Limit results to one or more languages. Use `lang_{xx}` with `\|` as delimiter (e.g. `lang_fr\|lang_de`). |
 | `async` | query | boolean | — | If true, returns a job and lets you fetch results asynchronously. |
+| `safe` | query | string | — | Adult content filter. `active` enables Google SafeSearch; `off` disables it. Omit to use Google default. |
 
 ### Python example
 
